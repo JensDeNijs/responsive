@@ -4,13 +4,16 @@
     background-color: red;
 	font-size:16px;
   }
-  #small{
-	visibility:visible;
-	position: absolute;
+	#small,#medium,#large{
+		position: absolute;
   }
-  #medium,#large{
-	visibility: hidden;
-	position: absolute;
+  
+	#smallp{
+		visibility:visible;
+}
+	#mediump,#largep{
+
+		visibility:hidden;
 }
 }
 @media only screen and (min-width: 300px) {
@@ -18,39 +21,42 @@
     background-color: green;
 		font-size:20px;
   }
-  #medium{
-	visibility:visible;
-	width:33%;
+	#medium{
+		width:33%;
   }
-  #small,#large{
-	visibility: hidden;
+	#small{
+		width:66%;
 }
-#small{
-	width:66%;
+	#large{
+		width:100%;
 }
-#large{
-	width:100%;
+	#mediump{
+		visibility:visible;
+}
+	#smallp,#largep{
+
+		visibility:hidden;
 }
 }
 @media only screen and (min-width: 768px) {
   body {
-    background-color: blue;
+		background-color: blue;
 		font-size:25px;
   }
-  #large{
-	visibility:visible;
-	float:left;
-	width:33%;
+	#small,#medium,#large{
+		float:left;
+		width:33%;
+}
+	#largep{
+		visibility:visible;
+}
+	#smallp,#mediump{
+		visibility:hidden;
+}
+}
+
+#smallp,#mediump,#largep{
+		position: absolute;
+		top:0px;
+		bottom:5px;
   }
-  #small,#medium{
-	visibility: hidden;
-}
-#small{
-	float:left;
-	width:33%;
-}
-#medium{
-	float:left;
-	width:33%;
-}
-}

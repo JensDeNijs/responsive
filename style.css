@@ -1,0 +1,56 @@
+
+@media only screen and (max-width: 300px) {
+  body {
+    background-color: red;
+	font-size:16px;
+  }
+  #small{
+	visibility:visible;
+	position: absolute;
+  }
+  #medium,#large{
+	visibility: hidden;
+	position: absolute;
+}
+}
+@media only screen and (min-width: 300px) {
+  body {
+    background-color: green;
+		font-size:20px;
+  }
+  #medium{
+	visibility:visible;
+	width:33%;
+  }
+  #small,#large{
+	visibility: hidden;
+}
+#small{
+	width:66%;
+}
+#large{
+	width:100%;
+}
+}
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: blue;
+		font-size:25px;
+  }
+  #large{
+	visibility:visible;
+	float:left;
+	width:33%;
+  }
+  #small,#medium{
+	visibility: hidden;
+}
+#small{
+	float:left;
+	width:33%;
+}
+#medium{
+	float:left;
+	width:33%;
+}
+}
